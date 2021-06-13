@@ -1,0 +1,14 @@
+<div class="pozadina">
+<div id="wrapper">
+<div *ngIf="userService.loggedUser?.id" class="nav"> <! --ovde se ucitava meni --> 
+  <app-menu></app-menu>
+</div>
+<div class="main"> <! --main (komponente) --> 
+  <router-outlet></router-outlet> 
+</div>
+<div class="footer">  <! --footer --> 
+  <app-footer></app-footer>
+</div>
+</div>
+
+</div>

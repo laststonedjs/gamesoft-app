@@ -1,0 +1,16 @@
+
+
+    <div class="card" style="width: 32rem;">
+        <img [src]="product.image" class="card-img-top" alt="asscreed">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <h4 class="card-title"> Price: {{product.price}} $</h4>
+           <p class="card-text"> {{product.device}}</p>
+          <p class="card-text">{{product.shortDescription}}</p>
+            <p class="card-text"> <strong> Description: </strong> {{product.description}}</p>
+            <button (click)="backToProducts()" class="btn btn-primary">Back to Products</button>
+            <button (click)="addToBasket(product)" class="btn btn-outline-success"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Add to Basket</button>
+        </div>
+      </div>
+  

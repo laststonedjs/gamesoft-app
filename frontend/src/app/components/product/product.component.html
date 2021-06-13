@@ -1,0 +1,89 @@
+<div class="product-container" *ngIf="!selectedProduct">
+<div class="search col-md-3">
+  
+  <h5 (click)="collapseFilter('filter')">
+    Filter <i class="fa fa-chevron-circle-{{collapseTab === 'filter'?'down' : 'up'}}" aria-hidden="true"></i>
+  </h5>
+
+<div class="filter" *ngIf="collapseTab === 'filter' ">
+    
+    <div class="form-group">
+        <input [(ngModel)]="searchProduct.priceFrom" class="form-control form-control-sm" type="text" placeholder="Price From" aria-label=".form-control-sm example">
+    </div>
+
+    <div class="form-group">
+      <input [(ngModel)]="searchProduct.priceTo" class="form-control form-control-sm" type="text" placeholder="Price To" aria-label=".form-control-sm example">
+  </div>
+
+  <div class="form-group">
+    <select class="form-select" [(ngModel)]="searchProduct.device">
+      <option selected value=""></option>
+      <option>Sony PlayStation</option>
+      <option>Nintendo</option>
+      <option>Windows</option>
+    </select>
+    </div>
+
+<div class="form-group">
+  <input [(ngModel)]="searchProduct.device" class="form-control" type="text" placeholder="Devices" aria-label="default input example">
+
+</div>
+</div>
+
+
+
+<h5  (click)="collapseFilter('category')">
+  Category <i class="fa fa-chevron-circle-{{collapseTab === 'category'?'down' : 'up'}}" aria-hidden="true"></i>
+</h5>
+      <div class="category" *ngIf="collapseTab === 'category' ">
+       <div class="form-check">
+        <input [(ngModel)]="searchProduct.category1" class="form-check-input" type="checkbox" id="flexCheckDefault1">
+        <label class="form-check-label" for="flexCheckDefault1">
+          Games Console       
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input [(ngModel)]="searchProduct.category2" class="form-check-input" type="checkbox" id="flexCheckDefault2">
+        <label class="form-check-label" for="flexCheckDefault2">
+          Board Games       
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input [(ngModel)]="searchProduct.category3" class="form-check-input" type="checkbox" id="flexCheckDefault3">
+        <label class="form-check-label" for="flexCheckDefault3">
+          Microsoft Softwares     
+        </label>
+      </div>
+
+    </div>
+<br>
+  <button (click)="clearSearchForm()" type="button" class="btn btn-danger">Clear</button>
+    <button (click)="searchProducts()" type="button" class="btn btn-success">Search</button>
+    
+ 
+  </div>
+
+
+<br>
+
+<div class="card" style="width: 17rem;" *ngFor="let product of products">
+    <img [src]="product.image" class="card-img-top image-size" alt="asscreed">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <h4 class="card-title">{{product.price}} $</h4>
+      <p class="card-text">{{product.shortDescription}}</p>
+      <button (click)="showMore(product)" class="btn btn-primary">Show more</button>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+<app-product-preview *ngIf="selectedProduct" [product]="selectedProduct" 
+(backToProductEmit)="selectedProduct = null">
+
+</app-product-preview>

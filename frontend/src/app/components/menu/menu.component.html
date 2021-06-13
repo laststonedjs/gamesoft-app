@@ -1,0 +1,23 @@
+<ul class="menu">
+  
+    <li [routerLink]="['/home']" routerLinkActive="link-active" >
+        <i class="fa fa-home" aria-hidden="true"></i> Home Page
+    </li>
+    <li [routerLink]="['/products']" routerLinkActive="link-active" >
+        <i class="fa fa-th" aria-hidden="true"></i> Products
+    </li>
+    <li [routerLink]="['/basket']" routerLinkActive="link-active" >
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart
+    </li>
+    <li [routerLink]="['/profile']" routerLinkActive="link-active" >
+        <i class="fa fa-user-circle" aria-hidden="true"></i> Profile
+    </li>
+    <li *ngIf="userService.isAdminRole" [routerLink]="['/admin']" routerLinkActive="link-active" >
+        <i class="fa fa-user-md" aria-hidden="true"></i> Admin
+    </li>
+  
+</ul>
+<div class="logout">
+    <span>{{userService.loggedUser?.username}}</span>
+    <i (click)="logout()" class="fa fa-power-off" aria-hidden="true"></i>
+</div>

@@ -1,0 +1,67 @@
+.menu {
+    list-style: none;
+   margin: 0;
+    padding: 0;
+    overflow: hidden;
+   background-color: #003380;
+  
+  
+  
+    li {
+        
+        display: block;
+        float: left;
+        padding: 16px;
+        font-size: 18px;
+        color: #ccccb3;
+        transition: background-color 0.2 ease,
+                                padding 0.4 linear;
+        i {
+            padding-right: 3px;
+        }
+        &:hover {
+            background-color: #0000ff;
+            cursor: pointer;
+            padding: 18px;
+           
+        }
+    }
+}
+
+.link-active {
+    border: none;
+    outline: none;
+    background-color: #0000ff;
+
+}
+
+ input {
+    margin: auto;
+    padding: 6px;
+    font-size: 14px;
+}
+.btn-outline-success {
+    margin: 7px 3px 7px 10px;
+    font-size: 15px;
+}
+.logout {
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    padding-right: 25px;
+    i {
+        font-size:28px;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            color: red;
+        }
+    }
+    span {
+        font-size:20px;
+        color: #99ffff;
+        padding-right: 15px;
+        
+    }
+}

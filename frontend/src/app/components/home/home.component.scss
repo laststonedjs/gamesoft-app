@@ -1,0 +1,141 @@
+
+#container-card {
+    overflow: hidden;
+    background-color: #ccffff;
+}
+
+.card-title1 {
+    font-size: 24px;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+   color: #e60000;
+   text-align:center;
+   margin-top: 10px;
+}
+.card-title2 {
+    font-size: 24px;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #99004d;
+    text-align:center;
+    margin-top: 10px;
+}
+.card-title3 {
+    font-size: 24px;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #000066;
+    text-align:center;
+    margin-top: 10px;
+}
+.card-text {
+   font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+span{
+    font-weight: bold;
+    color: #004d00;
+    
+   
+}
+
+.card{
+    float: left;
+    margin-right: 10px;
+    margin-top: 37px;
+    text-align: center;
+    background-color: #99e6ff;
+    
+   
+}
+.card2{
+    float: right;
+    
+    
+}
+    
+.card3 {
+   float: left;
+    margin-left: 50px;
+    
+    
+}
+.card-img-top {
+    height: 150px;
+    
+    border-radius: 3%;
+    
+}
+
+.list-group-item1 {
+    text-align: center;
+    color: #e60000;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+.list-group-item2 {
+    text-align: center;
+     padding: 5px;
+     margin: 5px;
+     color: #99004d;
+     font-size: 25px;
+     font-family: 'Bebas Neue', cursive;
+}
+.list-group-item3 {
+    text-align: center;
+     padding: 5px;
+     margin: 5px;
+    color: #000066;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.list-group {
+    list-style: none;
+    text-decoration: none;
+}
+.list-group-item {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.new {
+    color: #000066;
+    font-size: 20px;
+}
+
+.imgprod2{
+  
+    margin: 1px;
+   text-align: center;
+    
+}
+.video{
+    text-align: center;
+   position: relative;
+   right: -5px;
+   bottom: 5px;
+
+}
+.alert-danger1 {            
+    color: #000066;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.imgprod1 {
+    margin-top: 40px;
+    }
+.alert-danger2 {
+    background-color: #99e6ff;
+}

@@ -1,0 +1,52 @@
+.product-container {
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.card {
+    float: left;
+    margin-right: 5px;
+   margin-bottom: 5px;
+    border-radius: 2%;
+    padding: 5px;
+}
+.search {
+    h5 {
+        background:  #80b3ff;
+        padding: 5px;
+        text-align: center;
+        color: #003380;
+        margin: 0;
+        padding-left: 7px;
+        cursor: pointer;
+    }
+    .filter, .category {
+        padding: 10px 0;
+        border: 1px solid #b3d1ff;
+       }
+    .form-group {
+        padding: 0 15px;
+    }
+   
+}
+
+.form-select-lg{
+    font-size: 18px;
+    border-color: #0000ff;
+}
+
+
+.form-check {
+    font-size: 18px;
+    margin: 5px;
+    padding-left: 35px;
+    padding-right: 10px;
+}
+
+.image-size {
+    height: 150px !important;
+}
+
+button {
+    margin: 0 5px;
+}
